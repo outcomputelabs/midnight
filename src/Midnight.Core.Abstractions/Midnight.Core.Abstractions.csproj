@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Outcompute</Authors>
+    <Product>Midnight</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <RepositoryUrl>https://github.com/outcomputelabs/midnight</RepositoryUrl>
+    <PackageTags>caching distributed orleans</PackageTags>
   </PropertyGroup>
 
 </Project>

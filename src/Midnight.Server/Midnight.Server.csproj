@@ -8,7 +8,7 @@
     <Company>Outcompute</Company>
     <Product>Midnight</Product>
     <RepositoryUrl>https://github.com/outcomputelabs/midnight</RepositoryUrl>
-    <PackageTags>caching, distributed, orleans</PackageTags>
+    <PackageTags>caching distributed orleans</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
