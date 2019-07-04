@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,5 +9,9 @@
     <PackageTags>caching distributed orleans</PackageTags>
     <Company>Outcompute</Company>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Midnight.Hosting\Midnight.Hosting.csproj" />
+  </ItemGroup>
 
 </Project>

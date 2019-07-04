@@ -1,17 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.1</Version>
     <Authors>Jorge Candeias</Authors>
+    <Company>Outcompute</Company>
     <Product>Midnight</Product>
     <RepositoryUrl>https://github.com/outcomputelabs/midnight</RepositoryUrl>
     <PackageTags>caching distributed orleans</PackageTags>
-    <Company>Outcompute</Company>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.2.0" />
   </ItemGroup>
 
 </Project>
