@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Hosting;
 
-namespace Midnight.Server
+namespace Midnight.Hosting
 {
     public static class HostBuilderExtensions
     {

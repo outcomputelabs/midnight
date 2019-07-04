@@ -4,10 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.1</Version>
-    <Authors>Outcompute</Authors>
+    <Authors>Jorge Candeias</Authors>
     <Product>Midnight</Product>
     <RepositoryUrl>https://github.com/outcomputelabs/midnight</RepositoryUrl>
     <PackageTags>caching distributed orleans</PackageTags>
+    <Company>Outcompute</Company>
   </PropertyGroup>
 
 </Project>

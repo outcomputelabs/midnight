@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midnight.Core", "src\Midnig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midnight.Core.Abstractions", "src\Midnight.Core.Abstractions\Midnight.Core.Abstractions.csproj", "{785160A1-53CA-4355-8247-D7A8F546EC22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midnight.Server", "src\Midnight.Server\Midnight.Server.csproj", "{5266C4AF-4620-462F-8849-C6B748C28FD9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midnight.Client", "src\Midnight.Client\Midnight.Client.csproj", "{6EDB3189-DD8F-4AF5-B015-2254C02B5879}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midnight.Standalone", "src\Midnight.Standalone\Midnight.Standalone.csproj", "{2C19BCA7-C89B-4784-867C-FB9106D06A2B}"
@@ -17,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		azure-pipelines.yml = azure-pipelines.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midnight.Hosting.Generic", "src\Midnight.Hosting.Generic\Midnight.Hosting.Generic.csproj", "{299CC256-FD6A-4521-BA1B-3E9427A08BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midnight.Hosting.AspNetCore", "src\Midnight.Hosting.AspNetCore\Midnight.Hosting.AspNetCore.csproj", "{86CC4F97-6E73-412C-9074-ADB7A39EB588}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midnight", "src\Midnight\Midnight.csproj", "{E8D6F9D0-544D-4551-8736-005E757F40AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,10 +36,6 @@ Global
 		{785160A1-53CA-4355-8247-D7A8F546EC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{785160A1-53CA-4355-8247-D7A8F546EC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{785160A1-53CA-4355-8247-D7A8F546EC22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5266C4AF-4620-462F-8849-C6B748C28FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5266C4AF-4620-462F-8849-C6B748C28FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5266C4AF-4620-462F-8849-C6B748C28FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5266C4AF-4620-462F-8849-C6B748C28FD9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6EDB3189-DD8F-4AF5-B015-2254C02B5879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6EDB3189-DD8F-4AF5-B015-2254C02B5879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EDB3189-DD8F-4AF5-B015-2254C02B5879}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,6 +44,18 @@ Global
 		{2C19BCA7-C89B-4784-867C-FB9106D06A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C19BCA7-C89B-4784-867C-FB9106D06A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C19BCA7-C89B-4784-867C-FB9106D06A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299CC256-FD6A-4521-BA1B-3E9427A08BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299CC256-FD6A-4521-BA1B-3E9427A08BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299CC256-FD6A-4521-BA1B-3E9427A08BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299CC256-FD6A-4521-BA1B-3E9427A08BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86CC4F97-6E73-412C-9074-ADB7A39EB588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86CC4F97-6E73-412C-9074-ADB7A39EB588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CC4F97-6E73-412C-9074-ADB7A39EB588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86CC4F97-6E73-412C-9074-ADB7A39EB588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D6F9D0-544D-4551-8736-005E757F40AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D6F9D0-544D-4551-8736-005E757F40AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D6F9D0-544D-4551-8736-005E757F40AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D6F9D0-544D-4551-8736-005E757F40AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
