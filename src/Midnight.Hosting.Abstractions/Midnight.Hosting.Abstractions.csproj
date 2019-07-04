@@ -11,13 +11,4 @@
     <PackageTags>caching distributed orleans</PackageTags>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Midnight.Hosting.Abstractions\Midnight.Hosting.Abstractions.csproj" />
-  </ItemGroup>
-
 </Project>
