@@ -6,14 +6,22 @@ namespace Midnight.Hosting
 {
     public class MidnightHostedService : IHostedService
     {
+        private readonly IHost host;
+
+        public MidnightHostedService()
+        {
+            host = new HostBuilder()
+                .Build();
+        }
+
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            return Task.CompletedTask;
+            return host.StartAsync(cancellationToken);
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
-            return Task.CompletedTask;
+            return host.StopAsync(cancellationToken);
         }
     }
 }
