@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Midnight.Hosting;
 
 namespace Midnight.Testing.WebApp
 {
@@ -12,6 +13,9 @@ namespace Midnight.Testing.WebApp
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .UseMidnight(builder =>
+                {
+                });
     }
 }

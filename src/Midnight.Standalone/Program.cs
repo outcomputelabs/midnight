@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
+using Midnight.Hosting;
 
 namespace Midnight.Standalone
 {
@@ -28,6 +29,10 @@ namespace Midnight.Standalone
                     });
                 })
                 .UseConsoleLifetime()
+                .UseMidnight(builder =>
+                {
+
+                })
                 .Build();
 
             return host.RunAsync();
