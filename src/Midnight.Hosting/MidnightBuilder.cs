@@ -5,11 +5,11 @@ namespace Midnight.Hosting
 {
     public class MidnightBuilder : IMidnightBuilder
     {
-        private readonly IServiceCollection services;
-
         public MidnightBuilder(IServiceCollection services)
         {
-            this.services = services ?? throw new ArgumentNullException(nameof(services));
+            Services = services ?? throw new ArgumentNullException(nameof(services));
         }
+
+        public IServiceCollection Services { get; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Hosting;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -8,10 +9,9 @@ namespace Midnight.Hosting
     {
         private readonly IHost host;
 
-        public MidnightHostedService()
+        public MidnightHostedService(IServiceProvider provider)
         {
-            host = new HostBuilder()
-                .Build();
+            var hostBuilder = new HostBuilder();
         }
 
         public Task StartAsync(CancellationToken cancellationToken)

@@ -8,7 +8,9 @@ namespace Midnight.Hosting
         {
             services.AddHostedService<MidnightHostedService>();
 
-            return new MidnightBuilder(services);
+            var builder = new MidnightBuilder(services);
+            services.AddSingleton(builder);
+            return builder;
         }
     }
 }
