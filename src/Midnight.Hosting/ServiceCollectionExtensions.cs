@@ -6,6 +6,8 @@ namespace Midnight.Hosting
     {
         public static IMidnightBuilder AddMidnight(this IServiceCollection services)
         {
+            services.AddHostedService<MidnightHostedService>();
+
             return new MidnightBuilder(services);
         }
     }
