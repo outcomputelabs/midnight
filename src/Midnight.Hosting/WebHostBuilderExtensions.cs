@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace Midnight.Hosting
@@ -8,6 +9,12 @@ namespace Midnight.Hosting
         public static IWebHostBuilder UseMidnight(this IWebHostBuilder webHostBuilder, Action<WebHostBuilderContext, IMidnightBuilder> configureDelegate)
         {
             if (configureDelegate == null) throw new ArgumentNullException(nameof(configureDelegate));
+
+            webHostBuilder.ConfigureServices(services =>
+            {
+                services.AddHostedService<MidnightHostedService>();
+            });
+
             return webHostBuilder;
         }
 
