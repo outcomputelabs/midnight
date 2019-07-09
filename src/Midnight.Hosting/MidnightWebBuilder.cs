@@ -3,9 +3,9 @@ using System;
 
 namespace Midnight.Hosting
 {
-    public class MidnightBuilder : IMidnightBuilder
+    public class MidnightWebBuilder : IMidnightWebBuilder
     {
-        public MidnightBuilder(IServiceCollection services)
+        public MidnightWebBuilder(IServiceCollection services)
         {
             Services = services ?? throw new ArgumentNullException(nameof(services));
         }

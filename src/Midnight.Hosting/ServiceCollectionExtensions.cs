@@ -4,11 +4,11 @@ namespace Midnight.Hosting
 {
     public static class ServiceCollectionExtensions
     {
-        public static IMidnightBuilder AddMidnight(this IServiceCollection services)
+        public static IMidnightWebBuilder AddMidnight(this IServiceCollection services)
         {
             services.AddHostedService<MidnightHostedService>();
 
-            var builder = new MidnightBuilder(services);
+            var builder = new MidnightWebBuilder(services);
             services.AddSingleton(builder);
             return builder;
         }

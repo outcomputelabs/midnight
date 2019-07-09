@@ -2,7 +2,7 @@
 
 namespace Midnight.Hosting
 {
-    public interface IMidnightBuilder
+    public interface IMidnightWebBuilder
     {
         IServiceCollection Services { get; }
     }
