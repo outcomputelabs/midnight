@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Hosting;
+using Orleans.Hosting;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,9 +10,14 @@ namespace Midnight.Hosting
     {
         private readonly IHost host;
 
-        public MidnightHostedService(IServiceProvider provider)
+        public MidnightHostedService(IMidnightWebBuilder builder)
         {
-            var hostBuilder = new HostBuilder();
+            host = new HostBuilder()
+                .UseOrleans(orleans =>
+                {
+                    orleans.
+                })
+                .Build();
         }
 
         public Task StartAsync(CancellationToken cancellationToken)

@@ -1,15 +1,18 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
+using System.Collections.Generic;
 
 namespace Midnight.Hosting
 {
     public class MidnightWebBuilder : IMidnightWebBuilder
     {
-        public MidnightWebBuilder(IServiceCollection services)
-        {
-            Services = services ?? throw new ArgumentNullException(nameof(services));
-        }
+        private readonly List<Action<HostBuilderContext, IServiceCollection>> delegates = new List<Action<HostBuilderContext, IServiceCollection>>();
 
-        public IServiceCollection Services { get; }
+        public IMidnightWebBuilder ConfigureServices(Action<HostBuilderContext, IServiceCollection> configure)
+        {
+            delegates.Add(configure ?? throw new ArgumentNullException(nameof(configure)));
+            return this;
+        }
     }
 }
